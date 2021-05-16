@@ -1,0 +1,461 @@
+@font-face {
+    font-family: Proxima Nova;
+    src: url(fonts/Proxima\ Nova.ttf);
+   }
+@font-face {
+    font-family: Raleway Bold;
+    src: url(fonts/raleway/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: Raleway Light;
+    src: url(fonts/raleway/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: Raleway Regular;
+    src: url(fonts/raleway/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: Droid Serif Italic;
+    src: url(fonts/droid-serif.italic.ttf);
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+/* Fonts */
+.ralebold{
+    font-family: Raleway Bold;
+    font-size: 30px;
+    color: #636c6c;
+}
+.ralereg{
+    font-family: Raleway Regular;
+    font-size: 14px;
+}
+/* Container */
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 20%;
+}
+/* Outer Shell */
+.outer__shell{
+    max-width: 2570px;
+} 
+/* Header */
+.header{
+    margin: 0;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+}
+.header__logo{
+    font-family: Proxima Nova;
+    font-size: 30px;
+}
+.header_phone{
+    font-weight: 400;
+}
+.nav{
+    display: flex;
+}
+.nav__link{
+    color: #747a7a;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.icon{
+    margin-left: 8px;
+    margin-right: 35px;
+}
+.icon__1{
+    margin-left: 175px;
+}
+.fixed__header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+/* Intro */
+.intro{
+    display: flex;
+    width: 100%;
+
+    background-size: cover; 
+    background-image: url("images/slider.jpg");
+}
+.intro__first__text{
+    font-weight: 900;
+    margin: 100px 0 5px;
+    color: #ffffff;
+}
+.intro__second__text{
+    font-family: Raleway Light;
+    font-size: 30px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+.intro__maccive__text{
+    max-width: 472px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 35px;
+    margin-left: 0;
+}
+.intro__button{
+    max-width: 240px;
+    text-transform: uppercase;
+    font-family: Raleway Bold;
+    font-size: 21px;
+    background-color: transparent;
+    color: #ffffff;
+    
+    padding: 18px 56px;
+
+    border: 3px solid;
+    border-color: #91b2b6;
+    border-radius: 40px;
+
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+/* Feature Title */
+.feature__title-title{
+    color: #636c6c;
+    text-align: center;
+    margin: 0;
+    margin-right: 15%;
+    margin-top: 75px;
+}
+.feature__title-text{
+    color: #afb8b8;
+    text-align: center;
+    margin: 0;
+    margin-right: 18%;
+    margin-top: 15px;
+    margin-bottom: 65px;
+}
+.list{
+    flex-basis: 26%;
+    padding-bottom: 75px;
+}
+
+.active{
+    color: #3c3d42;
+}
+.feature__link{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    color: #9fa9a9;
+}
+.feature__link:hover .vertline{
+    display: block;
+}
+.feature__link:hover{
+    color:#5dca88;
+}
+.feature__link-title{
+    display: flex;
+    padding: 1.8rem 0;
+}
+.feature__link-icon {
+    text-align: center;
+    width: 45px;
+    margin-right: 35px;
+}
+.feature__link-text{
+    line-height: 2em;
+    font-family: Raleway Regular;
+}
+.vertline{
+    border-right: 6px solid #5dca88;
+    display: none;
+}
+.flex{
+    display: flex;
+}
+/* List Info */
+.listinfo{
+    width: 60%;
+}
+.listinfo__icon{
+    color: #5dca88;
+    text-align: center;
+}
+.listinfo__title{
+    font-family: Raleway Bold;
+    font-size: 24px;
+    color: #636c6c;
+    padding-top: 78px;
+    padding-left: 100px;
+}
+.listinfo__text{
+    color: #bac1c1;
+    padding-left: 100px;
+    padding-top: 33px;
+}
+/* Learn More */
+.learn__more{
+    background-color: #f2f9fe;
+    padding: 70px 0;
+}
+.learn__more-content--left{
+    width: 50%;
+    padding-right: 150px;
+}
+.learnmore__title{
+    color: #5dca88;
+}
+.learnmore__title-border{
+    padding-top: 5px;
+    border-bottom: 2px solid #949c9c;
+    width: 102px;
+}
+.learnmore__subtitle{
+    color: #8c9494;
+    font-family: Raleway Regular;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.learnmore__text{
+    color: #8c9494;
+    padding-bottom: 40px;
+    max-width: 400px;
+}
+.learnmore__button{
+    text-transform: uppercase;
+    font-family: Raleway Bold;
+    font-size: 21px;
+    background-color: transparent;
+    color: #636c6c;
+    
+    padding: 18px 56px;
+
+    border: 3px solid;
+    border-color: #aab2b5;
+    border-radius: 40px;
+
+    cursor: pointer;
+}
+
+/* Gallery */
+.gallery{
+    margin-top: 80px;
+    text-align: center;
+}
+.gallery__subtitle{
+    margin-top: 10px;
+    padding: 0 120px 30px;
+}
+.gallery__carousel{
+    display: flex;
+} 
+.gallery__carousel-text{
+    padding: 25px 50px 0;
+
+}
+.gallery__phone{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.conforarrows{
+    position: relative;
+    height: 750px;
+}
+.slick-arrow{
+    font-size: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-arrow:after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+}
+.slick-prev{
+    left: 0;
+    transform: rotate(-45deg);
+}
+.slick-next{
+    right: 0;
+    transform: rotate(135deg);
+}
+/* Learn More */
+.learn__more-content--right{
+    width: 50%;
+    padding-left: 150px;
+}
+.image__container{
+    width: 15%;
+    margin-left: 120px;
+}
+.main__image{
+    z-index: 1;
+    margin-left: -350px;
+}
+.smartphone{
+    height: 461px;
+    width: 222px;
+}
+.learn__more-container{
+    align-items: center;
+}
+
+/* About Us */
+.about__us-title{
+    padding-top: 100px;
+    text-align: center;
+}
+.slick-slide img{
+    display: block;
+    margin: 0 auto;
+}
+.about__us-quote{
+    font-family: Droid Serif Italic;
+    font-size: 24px;
+    color: #8c9494;
+    padding-top: 40px;
+    text-align: center;
+}
+.about__us-author{
+    font-size: 24px;
+    color: #68ce90;
+    padding-top: 25px;
+    text-align: center;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+}
+.my-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+.my-dots li{
+    background-color: #8c9494;
+    border: 1px solid #8c9494;
+    border-radius: 15px;
+    margin: 5px;
+}
+.my-dots li button{
+    background: transparent;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+}
+.my-dots .slick-active{
+    background-color: #5dca88;
+    border: 1px solid #5dca88;
+}
+
+/* Newsletter */
+
+.newsletter{
+    background-color: #f3f5f5;
+}
+.newsletter__icon{
+    color: #636c6c;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+.newsletter__title{
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+}
+.newsletter__entry-field{
+    border: 2px solid #bbc3c2;
+    border-radius: 125px;
+    padding: 26px 30px;
+    width: 600px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 100px;
+}
+.newsletter__button{
+    position: relative;
+    padding: 26px 30px;
+    border: 2px solid #5dca88;
+    border-radius: 125px;
+    background-color: #5dca88;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Proxima Nova;
+    font-size: 20px;
+    z-index: 1;
+    right: 75px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+/*.newsletter__entry-field*/
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* Footer */
+.footer{
+    background-color: #2d312f;
+}
+.footer__color{
+    color: #8c9494;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+}
+.footer__title{
+    font-family: Raleway Regular;
+    font-size: 24px;
+    text-align: center;
+    color: #8c9494;
+    padding-top: 50px;
+}
+.footer__icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.footer__icon{
+    padding-right: 10px;
+    color: #8c9494;
+}
+.footer__links{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+.footer__link{
+    padding-right: 12px;
+}
